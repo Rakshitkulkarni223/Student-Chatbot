@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NITK CHATBOT HOME PAGE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/Home_page.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body onload=display_ct();>
+<div class="horizontal_navigation">
+	<ul>
+		<li class="hr"><a href="{{ url_for('home') }}">Home</a></li>
+		<li class="hr"><a href="{{ url_for('chatbot') }}">Use Chatbot</a></li>
+	</ul>
+</div>
+<div class="view" style="width: 50%;height: 20%">
+	<div class="slideshow">
+		<img src="https://pbs.twimg.com/media/EK63BKFUUAA7j73.jpg" height="500px" width="200%">
+	</div>
+	<div class="slideshow">
+		<img src="https://ficta2020.nitk.ac.in/resource/img/nitk4.jpeg" height="500px" width="200%">
+	</div>
+	<div class="slideshow">
+		<img src="https://www.nitk.ac.in/design-system/campus-images/beach1.jpg" height="500px" width="200%">
+	</div>
+	<div class="slideshow">
+		<img src="https://dj.nitk.ac.in/sites/default/files/Reduced_0.jpg" height="500px" width="200%">
+	</div>
+</div>
+<div class="our_Team">
+	<h2 style="text-align: center;">OUR TEAM</h2>
+	<p style="text-align: center;padding-top: 20px">Meet the team - our chatbot designers:</p>
+	<br><br>
+	<div class="Team_Members" style="text-align: center;">
+		<div class="details">
+			<img src="https://he-s3.s3.amazonaws.com/media/avatars/RakshitK/resized/160/abaa72drakshit1.png" alt="Boss" style="width:45%;border-radius: 50%">
+			<h3>Rakshit Kulkarni</h3>
+			<p>Web Designer</p>
+		</div>
+		<div class="details">
+			<img src="https://i2.wp.com/fnewshub.com/wp-content/uploads/2020/11/FB_IMG_1605666747087.jpg?fit=960%2C959&ssl=1" alt="Boss" style="width:45%;border-radius: 50%">
+			<h3>Ishwar Mandal</h3>
+			<p>Web Designer</p>
+		</div>
+		<div class="details">
+			<img src="https://i2.wp.com/fnewshub.com/wp-content/uploads/2020/11/FB_IMG_1605666747087.jpg?fit=960%2C959&ssl=1" alt="Boss" style="width:45%;border-radius: 50%">
+			<h3>Kiran Kumar JM</h3>
+			<p>Web Designer</p>
+		</div>
+		<div class="details">
+			<img src="https://i2.wp.com/fnewshub.com/wp-content/uploads/2020/11/FB_IMG_1605666747087.jpg?fit=960%2C959&ssl=1" alt="Boss" style="width:45%;border-radius: 50%">
+			<h3>Anshul Patel</h3>
+			<p>Web Designer</p>
+		</div>
+	</div>
+</div>
+<div class="work" style="background-image: url(https://hackverse.nitk.ac.in/blog/assets/images/nitk/aerial-beach.jpg); background-repeat: no-repeat; background-repeat: no-repeat; background-size: 100% 100%;">
+	<div class="text">
+		<h2 style="text-align: center; color:black;font-size: 40px">Our Institute</h2><hr style="width: 30%;border-color: black"><br>
+		<p style="font-size: 20px;padding: 15px">The National Institute of Technology Karnataka (NITK) formerly known as Karnataka Regional Engineering College (KREC), is a public engineering college at Surathkal, about 20 kilometres north of Mangalore. It was founded in 1960 as KREC while today, it is one of the 30 National Institutes of Technology in India and is recognised as an Institute of National Importance. It has a suburban campus, in close proximity to the Arabian Sea. National Highway 66 runs through the campus and serves as the major mode of access.</p><br><br><br><br>
+	</div><br>
+</div>
+<div class="chatbot">
+	<h3>About Chatbot</h3><br>
+	<p style="color: black">As our institute does not have its own chatbot so we thought to make it.We have named our chatbot as "KAIRA".KIARA is an AI based piece of software which will  try to solve maximum of the queries asked by the user.for its working,KAIRA uses Python NLTK and  deep learning technique.</p><br><br><br>
+	<button class="button" style="vertical-align:middle" onclick="window.location.href='{{url_for('chatbot')}}';"><span>Use Chatbot</span></button><br><br><br><br><br><br>
+</div>
+<footer class="footer">
+	<h4>Follow NITK:</h4><br>
+	<a href="https://www.facebook.com/NITKarnataka/" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://twitter.com/surathkal_nitk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"target="_blank"></a>
+    <a href="https://www.nitk.ac.in/" class="fa fa-google" target="_blank"></a>
+    <a href="https://www.linkedin.com/school/nitk-surathkal/?originalSubdomain=in" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.youtube.com/channel/UCrYljZ7p47MVeMn4hEFZe2w" class="fa fa-youtube" target="_blank"></a>
+    <a href="https://www.instagram.com/nitk.surathkal/?hl=en" class="fa fa-instagram" target="_blank"></a><br><br>
+    <span id='ct'></span>
+    <script type="text/javascript"> 
+        function display_c()
+        {
+	        var refresh=1000; 
+	        mytime=setTimeout('display_ct()',refresh)
+        }
+        
+        function display_ct() 
+        {
+			document.getElementById('ct').innerHTML = new Date();
+	        display_c();
+        }
+    </script>
+    <br><br>
+    <p>© copyright.All Rights Reserved</p>
+</footer>
+</body>
+<script type="text/javascript">
+	var number_of_image_slides=0;
+    Slider();
+    function Slider()
+    {
+	    var slides = document.getElementsByClassName("slideshow");
+	    for(var i=0;i<slides.length;i++)
+	    {
+	      slides[i].style.display = "none";
+	    }
+	    number_of_image_slides++;
+	    if (number_of_image_slides > slides.length)
+	    {
+	      number_of_image_slides = 1
+	    }
+	    slides[number_of_image_slides-1].style.display = "block";
+	    setTimeout('Slider()',2000);
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+{"intents": [
+        {       
+                "tag": "greeting",
+                "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+                "responses": ["Hello,how can I help?", "Hi there, how can I help?"],
+                "context": [""]
+        },
+        {
+                "tag":"Asking",
+                "patterns":["Hey,How r u?"],
+                "responses":["I am Fine!!"],
+                "context":[""]
+        },
+        {
+                "tag": "goodbye",
+                "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+                "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+                "context": [""]
+        },
+        {
+                "tag":"Introduction",
+                "patterns":["Whats your name?","your Name?","Hey Your Name?","Name?"],
+                "responses":["Hello,My name is KAIRA"],
+                "context":[""]
+        },
+        {
+                "tag":"Address",
+                "patterns":["where are you from?","where are you?","What is your address?","Whats your Address?","you r from?"],
+                "responses":["I am from NITK Surathkal.NH 66, Srinivasnagar,Mangalore, Karnataka"],
+                "context":[""]
+        },
+        {
+                "tag": "thanks",
+                "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","Thanku"],
+                "responses": ["Happy to help!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "No problem welcome!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "My pleasure\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42"],
+                "context": [""]
+        },
+        {
+                "tag": "personal",
+                "patterns": ["Date of Birth","When were you born?","when is your bday?"],
+                "responses": ["6 August 1960"],
+                "context": [""]
+        },
+        {
+                "tag":"fun",
+                "patterns": ["what are u doing?","what's up?"],
+                "responses": ["Nothing,I am busy in chatting with you.\uD83D\uDE09\uD83D\uDE1C\uD83D\uDE05\uD83D\uDE05\uD83D\uDE05"],
+                "context": [""]
+        },
+        {
+                "tag":"fun",
+                "patterns": ["what are u doing?","what's up?"],
+                "responses": ["Nothing,I am busy in chatting with you."],
+                "context": [""]
+        }
+   ]
+}

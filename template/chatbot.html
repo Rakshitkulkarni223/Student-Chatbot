@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CHATBOT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/static/chatbot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/static/chatbot.js"></script>
+</head>
+<body onload="get_name()">
+	<div class="chatbot">
+		<div class="chat">
+			<div class="header">
+				<div class="Dpheader">
+					<div class="Dpleft">
+						<a href="{{ url_for('home') }}"><img src="https://img.flaticon.com/icons/png/512/93/93634.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" class="back_button"></a>
+						<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qe9AdqGzKWAqtAH-xGk7duyUA5KK4I11oA&usqp=CAU" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qe9AdqGzKWAqtAH-xGk7duyUA5KK4I11oA&usqp=CAU" class="Dp"></a>
+						<h2>Kaira</h2>
+						<span id="show_online">online</span>
+					</div>
+				</div>
+			</div>
+			<div class="frame" id="frame">
+
+				<!-- <div class="chats">
+					<div class="user_question_position"></div>
+					<div class="bg_color bg_color_question" id="ques">
+						<p  class="text" id="question"></p>
+					</div>
+				</div> -->
+				<!-- <div class="chats">
+					<div class="chat_answer"></div>
+					<div class="bg_color" id="ans">
+						<p class="text" id="answer"></p>
+					</div>
+				</div>	 -->
+
+			</div>
+
+			<div class="chat_from">
+				<textarea id="input_text" placeholder="Type a message" name="text"></textarea>
+				<i class="fa fa-microphone" style="font-size:36px;" id="mic" onclick="speak()"></i>
+				<button id="submit" onclick="response()">send</button>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script>
+
+	var scroll=document.getElementById('frame');
+
+	function answer(question)
+	{
+		setTimeout(function()
+		{
+			var div = document.createElement('div');
+			div.className='chats';
+			div.id='chats';
+
+			document.getElementById('frame').appendChild(div);
+
+			$.get("/get",{text:question}).done(function (ans)
+			{
+				div.innerHTML = `<div class="chat_answer"></div> <div class="bg_color" id="ans"><p class="text" id="answer">${ans}</p></div>`;
+				if(scroll.clientHeight<scroll.scrollHeight)
+			    {
+				    scroll.scrollTop=scroll.scrollHeight;
+			    }
+			});
+			document.getElementById("show_online").innerText='online';
+		},2000);
+		document.getElementById("show_online").innerText='Typing...';
+	}
+	function response()
+	{
+		var question = document.getElementById('input_text').value;
+
+		var div = document.createElement('div');
+		div.className='chats';
+		div.id='chats';
+
+		document.getElementById('frame').appendChild(div);
+
+		div.innerHTML = `<div class="user_question_position"></div> <div class="bg_color bg_color_question" id="ques"><p class="text" id="question">${question}</p></div>`;
+
+		document.getElementById('input_text').value="";
+
+		if(scroll.clientHeight<scroll.scrollHeight)
+		{
+			scroll.scrollTop = scroll.scrollHeight;
+		}
+		answer(question)
+	}
+</script>
+
+</html>

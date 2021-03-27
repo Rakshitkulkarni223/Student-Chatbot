@@ -1,0 +1,203 @@
+/*slideshow*/
+.slideshow
+{
+    display: none;
+}
+.h2
+{
+	font-size: 30px;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+}
+ul
+{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: black;
+}
+li.hr
+{
+	float: left;
+}
+
+li.hr a
+{
+	display: block;
+	color: white;
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
+    display: block;
+    line-height: 2;
+    padding: 8px 16px;
+    white-space: normal;
+	text-decoration: none;
+}
+html, body
+{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+}
+li.hr a:hover
+{
+	background-color: #F662B9;
+}
+.horizontal_navigation
+{
+	top: 0;
+	position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Our Team*/
+.our_Team
+{
+	padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+.details
+{
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+.Team_Members::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 601px)
+{
+    .details
+    {
+        width: 100%;
+    }
+}
+
+/* work */
+.work
+{
+	padding-top: 64px;
+    padding-bottom: 64px;
+    color: #fff;
+}
+
+/*chatbot*/
+.chatbot
+{
+	padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+/* button*/
+.button
+{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #19F768;
+    border-color: #191BF7;
+    color: #191BF7;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span
+{
+    padding-right: 25px;
+}
+
+.button:hover span:after
+{
+    opacity: 1;
+    right: 0;
+}
+/*footer*/
+.footer
+{
+
+    color: #fff;
+    background-color: #000000;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+.fa
+{
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover
+{
+    opacity: 1.0;
+}
+
+.fa-facebook
+{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter
+{
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google
+{
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin
+{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube
+{
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram
+{
+    background: #125688;
+    color: white;
+}
