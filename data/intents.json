@@ -46,12 +46,6 @@
                 "patterns": ["what are u doing?","what's up?"],
                 "responses": ["Nothing,I am busy in chatting with you.\uD83D\uDE09\uD83D\uDE1C\uD83D\uDE05\uD83D\uDE05\uD83D\uDE05"],
                 "context": [""]
-        },
-        {
-                "tag":"fun",
-                "patterns": ["what are u doing?","what's up?"],
-                "responses": ["Nothing,I am busy in chatting with you."],
-                "context": [""]
         }
    ]
 }
