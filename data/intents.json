@@ -2,50 +2,230 @@
         {       
                 "tag": "greeting",
                 "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-                "responses": ["Hello,how can I help?", "Hi there, how can I help?"],
-                "context": [""]
+                "responses": ["Hello,how can I help?", "Hi there, how can I help?"]
         },
         {
                 "tag":"Asking",
                 "patterns":["Hey,How r u?"],
-                "responses":["I am Fine!!"],
-                "context":[""]
+                "responses":["I am Fine!!\uD83D\uDE0A"]
         },
         {
                 "tag": "goodbye",
                 "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-                "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-                "context": [""]
+                "responses": ["Bye...\uD83D\uDC4B See you!", "Bye..\uD83D\uDC4BHave a nice day", "Bye! \uD83D\uDC4B Come back again soon."]
         },
         {
                 "tag":"Introduction",
                 "patterns":["Whats your name?","your Name?","Hey Your Name?","Name?"],
-                "responses":["Hello,My name is KAIRA"],
-                "context":[""]
+                "responses":["Hello,My name is KAIRA"]
         },
         {
                 "tag":"Address",
                 "patterns":["where are you from?","where are you?","What is your address?","Whats your Address?","you r from?"],
-                "responses":["I am from NITK Surathkal.NH 66, Srinivasnagar,Mangalore, Karnataka"],
-                "context":[""]
+                "responses":["I am from NITK Surathkal.NH 66, Srinivasnagar,Mangalore, Karnataka"]
         },
         {
                 "tag": "thanks",
                 "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","Thanku"],
-                "responses": ["Happy to help!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "No problem welcome!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "My pleasure\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42"],
-                "context": [""]
+                "responses": ["Happy to help!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "No problem welcome!\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42", "My pleasure\uD83D\uDE07\uD83D\uDE0A\uD83D\uDE42"]
         },
         {
                 "tag": "personal",
                 "patterns": ["Date of Birth","When were you born?","when is your bday?"],
-                "responses": ["6 August 1960"],
-                "context": [""]
+                "responses": ["6 August 1960"]
         },
         {
                 "tag":"fun",
                 "patterns": ["what are u doing?","what's up?"],
-                "responses": ["Nothing,I am busy in chatting with you.\uD83D\uDE09\uD83D\uDE1C\uD83D\uDE05\uD83D\uDE05\uD83D\uDE05"],
-                "context": [""]
+                "responses": ["Nothing,I am busy in chatting with you.\uD83D\uDE09\uD83D\uDE1C\uD83D\uDE05\uD83D\uDE05\uD83D\uDE05"]
+        },
+        {
+                "tag": "Near by places",
+                "patterns": ["What r the near by places to visit From NITK?","Near by places to visit","Famous Places near nitk","Hangout Places Near nitk","From nitk where can i visit?"],
+                "responses": ["1.Bekal Fort, Kasargod\n2.St. Mary's Island, Udupi\n3.Goa\n4.Karwar\n5.Kudremukh\n6.Madikeri, Kodagu\n7.Kemmangundi\n8.Udhagamandalam (Ooty)\n9.Udupi\n10.Kateel\n11.Sringeri\n12.kollur\n13.Dharmasthala\n14.Sabarimala\n15.Guruvayoor\n16.Mysore\n17.Potah"]
+        },
+        {
+                "tag": "about_tourist_place_BekalFort",
+                "patterns": ["Bekal Fort, Kasargod"],
+                "responses": ["It is a coastal fortress and verdant beach situated 70 km off Mangalore. Bekal Fort can be reached from Kasargod, Kerala State; which in turn is an hour's bus ride from Mangalore"]
+        },
+        {
+                "tag": "about_tourist_place_St._Mary's_Island",
+                "patterns": ["St. Mary's Island, Udupi"],
+                "responses": ["Tiles Factory; situated off the coast, is a volcanic island."]
+        },
+        {
+                "tag": "about_tourist_place_Goa",
+                "patterns": ["Goa"],
+                "responses": ["Known worldwide for beaches, and architecture. 360 km's, 8 hrs by daily buses and trains"]
+        },
+        {
+                "tag": "about_tourist_place_Karwar",
+                "patterns": ["Karwar"],
+                "responses": ["Beaches, SeaBird Naval base and Kaiga Nuclear power plant. 5 hrs by regular daytime buses and trains."]
+        },
+        {
+                "tag": "about_tourist_place_Kudremukh",
+                "patterns": ["Kudremukh"],
+                "responses": ["Forest Reserve and Trekker's Paradise. 3 hrs by bus from NITK."]
+        },
+        {
+                "tag": "about_tourist_place_Madikeri",
+                "patterns": ["Madikeri, Kodagu"],
+                "responses": ["a visit to the Coorg coffee plantations and waterfalls to recharge spent batteries. 3 hrs from Mangalore by bus."]
+        },
+        {
+                "tag": "about_tourist_place_Kemmangundi",
+                "patterns": ["Kemmangundi"],
+                "responses": ["Cool air,waterfalls and lush greenery. Only for the steel-willed and clad explorers"]
+        },
+        {
+                "tag": "about_tourist_place_Udhagamandalam",
+                "patterns": ["Udhagamandalam (Ooty)"],
+                "responses": ["Queen Of Hill Stations, famed for its annual flower show. 12 hour bus journey via Mysore"]
+        },
+        {
+                "tag": "about_tourist_place_Udupi",
+                "patterns": ["Udupi"],
+                "responses": ["NITK is close to the temple towns of Udupi (Sri Krishna Temple and Madhva Maths) 50 km"]
+        },
+        {
+                "tag": "about_tourist_place_Kateel",
+                "patterns": ["Kateel"],
+                "responses": ["Kateel (Durgaparameshwari Temple) 20km"]
+        },
+        {
+                "tag": "about_tourist_place_Sringeri",
+                "patterns": ["Sringeri"],
+                "responses": ["Sringeri (Sharada Peetham) 75km"]
+        },
+        {
+                "tag": "about_tourist_place_Kollur",
+                "patterns": ["Kollur"],
+                "responses": ["Kollur (Mookambika Temple) 75km"]
+        },
+        {
+                "tag": "about_tourist_place_Dharmasthala",
+                "patterns": ["Dharmasthala"],
+                "responses": ["Dharmasthala - 100km"]
+        },
+        {
+                "tag": "about_tourist_place_Sabarimala",
+                "patterns": ["Sabarimala"],
+                "responses": ["Place of pilgrimage for Lord Ayyappa devotees. Season commences mid-November every year. KSRTC organizes overnight bus services each season."]
+        },
+        {
+                "tag": "about_tourist_place_Guruvayoor",
+                "patterns": ["Guruvayoor"],
+                "responses": ["Famed Sri Krishna Temple in Kerala, regular overnight bus services."]
+        },
+        {
+                "tag": "about_tourist_place_Mysore",
+                "patterns": ["Mysore"],
+                "responses": ["world-famous Dassurah festival and Chamundi hills; regular overnight bus services. Retreat Centre."]
+        },
+        {
+                "tag": "about_tourist_place_Potah",
+                "patterns": ["Potah"],
+                "responses": ["spiritual centre in South Kerala, on the rail route from Mangalore to Thiruvananthapuram"]
+        },
+        {
+                "tag": "about_Guest_Houses",
+                "patterns": ["Guest Houses"],
+                "responses": ["The Institute has three guest houses within the campus. The guest houses are located on the western side of the National Highway \n(NH66), near the beach (Arabian Sea). They are named as JCBose, Vikram Sarabhai and Homi J Bhaba. J C Bose Guest house \nfurnished with A/C Suites with a telephone, TV and Internet connections in each room. VIPs, Institute guests and invited guests are \naccommodated here. The Vikram Sarabhai and Homi J Baba Guest House have A/C, telephone and TV connections in each rooms."]
+        },
+        {
+                "tag": "about_Staff_Quarters",
+                "patterns": ["Staff Quarters"],
+                "responses": ["Residential campus is made up of Quarters for faculties and staff equipped with all modern amenities. Director's Bungalow, \nProfessors & Asst. professors quarters, Lectures & Asst. lectures quarters, Warden quarters, Bachelors quarters and Non-teaching \nstaff colony has been separately developed."]
+            
+        },
+        {
+                "tag": "about_Sports_Facilities",
+                "patterns": ["Sports Facilities"],
+                "responses": ["A full-fledged Physical Education & Sports Department with one Students’ Activity and Sports Officer (SAS Officer) and one Assistant\nPhysical Director provides and manages sports, games and physical fitness facilities."]
+            
+        },
+        {
+                "tag": "about_Swimming_Pool",
+                "patterns": ["Swimming Pool"],
+                "responses": ["International Standard, 50 Mts. x 25 Mts. Size, with 90 Cm. depth at shallow end and 5 Mts. depth at deeper end. 3 Platforms of 1 \nMt., 3 Mts. and 5 Mts height for Diving, and One Spring Board fitted at 1 Mt. height for Diving. Anti wave Lane markers to conduct \ncompetitions is also provided. Take off Boards are portable. Fiber of Olympic type is fitted. It has the capability to accommodate 150 \nto 200 people at a time."]
+            
+        },
+        {
+                "tag": "about_Shopping_Centers",
+                "patterns": ["Shopping Centers"],
+                "responses": ["Two shopping centers are exists in the campus where bakery, vegetable shop, cloth shop, tailoring, saloon, beauty parlor, laundry, \nprinting press, provisional store etc are available."]
+        },
+        {
+                "tag": "about_Banks",
+                "patterns": ["Banks"],
+                "responses": ["Two banks (Canara bank and State bank of India) with ATM facility are available in the campus."]
+        },
+        {
+                "tag": "about_Open_Air_Theatre",
+                "patterns": ["Open Air Theatre"],
+                "responses": ["Open Air Theatre (Students Activity Centre)\nOne open Air theatre of about 1000 seating capacity is available."]
+        },
+        {
+                "tag": "about_Silver_Jubilee_Auditorium",
+                "patterns": ["Silver Jubilee Auditorium (SJA)"],
+                "responses": ["One Auditorium of about 1,200 seating capacity is available (is being fully air-conditioned)\n"]
+        },
+        {
+                "tag": "about_Campus_Amenity_Schools",
+                "patterns": ["Campus Amenity Schools"],
+                "responses": ["One Kannada Medium (State Board) and one English medium (CBSE board) schools are function in the campus.\n"]
+        },
+        {
+                "tag": "about_Canteens",
+                "patterns": ["Canteens"],
+                "responses": ["Two canteens and three-four small cafeterias are available"]
+        },
+        {
+                "tag": "about_Post_Office",
+                "patterns": ["Post Office"],
+                "responses": ["One post office is available in the Institute campus."]
+        },
+        {
+                "tag": "about_degrees",
+                "patterns": ["What all degrees Nitk provide?","Degrees of NITK"],
+                "responses": ["1.Btech.\\n2.Mtech.\\n3.Phd."]
+        },
+        {
+                "tag": "website",
+                "patterns": ["what is the official website of NITK?","Official website of nitk"],
+                "responses": ["https://www.nitk.ac.in/"]
+        },
+        {
+                "tag": "postal_code",
+                "patterns": ["what is the postal code of NITK?","Postal code of  nitk"],
+                "responses": ["575025."]
+        },
+        {
+                "tag": "number_of_departments",
+                "patterns": ["How many departments are there in NITK?","Total number of departments nitk"],
+                "responses": ["11 Departments."]
+        },
+        {
+                "tag": "Types_of_departments",
+                "patterns": ["what all departments are there in NITK?","Types of departments in nitk","what all branches are there in Btech course?"],
+                "responses": ["There are 9 branches available for Btech course.\\\n1.Computer Science.\\\n2.Information Technology.\\\n3.Electronics and Communication Engineering.\\n4.Electrical and Electronics Engineering.\\n5.Mechanical Engineering.\\n6.Civil Engineering.\\n7.Chemical Engineering.\\n8.Mining Engineering.\\n9.Metallurgy Engineering."]
+        },
+        {
+                "tag": "getting_into_nitk",
+                "patterns": ["How can someone get admitted to NITK for Btech?","Admission in nitk"],
+                "responses": ["To get into NITK, one has to clear the JEE Mains exam with a valid AIR rank."]
+        },
+        {
+                "tag": "grading_system",
+                "patterns": ["Which grading pattern does NITK follow?","cgpa or percentage"],
+                "responses": ["NITK follows the CGPA grading pattern."]
+        },
+        {
+                "tag": "about_placement",
+                "patterns": ["What is the placement percentage of NITK?","average Placement Percentage in nitk"],
+                "responses": ["Around 90% Graduates get placed in NITK."]
         }
    ]
 }
