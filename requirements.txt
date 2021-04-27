@@ -1,0 +1,7 @@
+flask==1.1.2
+keras==2.4.3
+pickle
+nltk==3.6.2
+json
+matplotlib==3.4.1
+random
